@@ -39,6 +39,9 @@ impl Vec2 {
     pub fn cmul_pol(&self, other: Self) -> Self {
         vec2(self.x*other.x, self.y + other.y)
     }
+    pub fn cadd_pol(&self, other: Self) -> Self {
+        (self.pol2cart()+other.pol2cart()).cart2pol()
+    }
     pub fn cart2pol(&self) -> Self {
         vec2(self.dot(self).sqrt(), self.y.atan2(self.x))
     }

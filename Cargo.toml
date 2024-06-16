@@ -5,6 +5,18 @@ edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[[bin]]
+name = "wg2"
+path = "src/wg2.rs"
+
+[[bin]]
+name = "wg3"
+path = "src/wg3.rs"
+
+[[bin]]
+name = "sc"
+path = "src/sc.rs"
+
 [dependencies]
 png = "0.17.13"
 riff-wave = "0.1.3"

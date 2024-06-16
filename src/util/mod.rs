@@ -26,3 +26,5 @@ pub use rng::*;
 pub use signal::*;
 
 pub use std::f32::consts::PI;
+pub use std::f32::consts::TAU;
+pub use std::iter::repeat;

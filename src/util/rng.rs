@@ -7,6 +7,10 @@ pub fn random_seed() -> u32 {
 pub trait KHash {
     fn next(&mut self);
     fn as_f32(&self) -> f32;
+    fn next_f32(&mut self) -> f32 {
+        self.next();
+        self.as_f32()
+    }
     fn chance(&mut self, percent: f32) -> bool {
         self.next();
         self.as_f32() < percent
@@ -21,4 +25,5 @@ impl KHash for u32 {
     fn as_f32(&self) -> f32 {
         *self as f32 / u32::MAX as f32
     }
+    
 }
