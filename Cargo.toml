@@ -17,6 +17,17 @@ path = "src/wg3.rs"
 name = "sc"
 path = "src/sc.rs"
 
+[[bin]]
+name = "inst"
+path = "src/inst.rs"
+
 [dependencies]
 png = "0.17.13"
 riff-wave = "0.1.3"
+cpal = "0.15.2"
+ringbuf = "0.2"
+glow = "0.13.1"
+glutin = "0.28.0"
+glutin-winit = "0.4.2"
+raw-window-handle = "0.6.0"
+winit = "0.29.11"

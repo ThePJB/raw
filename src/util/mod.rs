@@ -13,6 +13,13 @@ mod distance_field_generation;
 mod rng;
 mod signal;
 
+mod sound_context;
+pub use sound_context::*;
+mod render_context;
+pub use render_context::*;
+mod context;pub use context::*;
+
+
 pub use vec2::*;
 pub use vec3::*;
 pub use vec4::*;
@@ -26,5 +33,6 @@ pub use rng::*;
 pub use signal::*;
 
 pub use std::f32::consts::PI;
+pub const PHI: f32 = 1.618033988749894848204;
 pub use std::f32::consts::TAU;
 pub use std::iter::repeat;

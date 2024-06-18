@@ -76,3 +76,8 @@ still yet to rly try some of that other shit like the 2 ways on a string one
 I kinda reckon no  traits
 no nothing
 concrete shit all the way
+
+yea that shit honestly should just be commutiny anyway, the whole length thing, so it should just be delay and a single w
+
+
+Honestly other instrument sends the patch rather than the samples
