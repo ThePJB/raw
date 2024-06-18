@@ -81,3 +81,11 @@ yea that shit honestly should just be commutiny anyway, the whole length thing, 
 
 
 Honestly other instrument sends the patch rather than the samples
+
+
+Yea so I reckon you could put like a harmonic bool in each reverb or maybe a float and its just times yeah, on zero or 1 pretty scuffed but that might actualy be a cool relation for the sound to have
+
+rn wiring drive up to the freq thing is pretty cool
+its kind of interesting in its own right
+many harm was also pretty good
+harm relation to this tho as well
