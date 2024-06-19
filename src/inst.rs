@@ -5,7 +5,7 @@ use reverb::*;
 mod util;
 use util::*;
 
-pub const FS: f64 = 44100.0;
+pub const FS: f64 = 48000.0;
 pub const TS: f64 = 1.0 / FS;
 
 pub struct Instrument {
@@ -56,19 +56,19 @@ impl Instrument {
                 vec2(0.999, 0.016),
                 vec2(0.99, 0.2569),
 
-                vec2(0.9999, 0.02),
-                vec2(0.9999, 0.03),
-                vec2(0.9999, 0.04),
-                vec2(0.999, 0.05),
+                // vec2(0.9999, 0.02),
+                // vec2(0.9999, 0.03),
+                // vec2(0.9999, 0.04),
+                // vec2(0.999, 0.05),
 
-                vec2(0.99, 0.012),
-                vec2(0.99, 0.013),
-                vec2(0.998, 0.081),
-                vec2(0.997, 0.082),
-                vec2(0.999, 0.04),
-                vec2(0.9994, 0.02),
-                vec2(0.9998, 0.01),
-                vec2(0.99, 0.16),
+                // vec2(0.99, 0.012),
+                // vec2(0.99, 0.013),
+                // vec2(0.998, 0.081),
+                // vec2(0.997, 0.082),
+                // vec2(0.999, 0.04),
+                // vec2(0.9994, 0.02),
+                // vec2(0.9998, 0.01),
+                // vec2(0.99, 0.16),
             ]),
             n: 0,
             t: 0.0,
@@ -89,7 +89,7 @@ impl Instrument {
         self.n += 1;
         self.t += TS;
         // let z = self.reverb.tick(vec2(self.mag, 0.0), self.harm); // maybe this is a good parameter to make random
-        let z = self.reverb.tick(vec2(self.mag, self.harm), 1.0); // maybe this is a good parameter to make random
+        let z = self.reverb.tick(vec2(self.mag, 0.0), self.harm); // maybe this is a good parameter to make random
         let z = squash(z);
         let z = z.pol2cart();
         let stereo = vec2(z.x,z.y);
