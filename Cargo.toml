@@ -21,6 +21,18 @@ path = "src/sc.rs"
 name = "inst"
 path = "src/inst.rs"
 
+[[bin]]
+name = "inst2"
+path = "src/inst2.rs"
+
+[[bin]]
+name = "fm"
+path = "src/fm.rs"
+
+[[bin]]
+name = "am"
+path = "src/am.rs"
+
 [dependencies]
 png = "0.17.13"
 riff-wave = "0.1.3"
